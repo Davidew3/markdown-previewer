@@ -1,0 +1,135 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.editor-container, .preview-container {
+  width: 35%;
+  margin-right: 20px;
+}
+
+.editor-container {
+  margin-right: 20px;
+}
+
+.preview-container {
+  margin-left: 20px;
+}
+
+label {
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+textarea#editor {
+  width: 100%;
+  height: 80vh;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: -5px 5px 10px 1px #000000;
+  background-color: #cdf7f7;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+}
+
+div#preview {
+  width: 100%;
+  height: 80vh;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 1px #000000;
+  background-color: #c6aeec;
+  overflow-y: auto;
+}
+
+div#preview h1, div#preview h2, div#preview h3, div#preview h4, div#preview h5, div#preview h6 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+div#preview p {
+  margin-bottom: 10px;
+}
+
+div#preview code {
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+div#preview pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+div#preview blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 10px;
+  color: #666;
+}
+
+div#preview img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+div#preview a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+div#preview a:hover {
+  text-decoration: underline;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
